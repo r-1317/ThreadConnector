@@ -29,17 +29,16 @@ def convert_url(html_url):
 
 def get_dat(url):
   headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5666.197 Safari/537.36"}
-  dat = ""
+  dat = b""
   dat_status = False
   dat_res = requests.get(url, headers = headers)
   if dat_res.status_code == 200:
     dat_status = True
     dat = dat_res.content
   print(type(dat))# test
-  #test▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+  #test##############使い回しできそう##
   with open("test.txt", mode="wb") as file:
     file.write(dat)
-  #▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
   return(dat_status, dat)
 
 
