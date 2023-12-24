@@ -36,9 +36,9 @@ def get_dat(url):
     dat_status = True
     dat = dat_res.content
   print(type(dat))# test
-  #test##############使い回しできそう##
-  with open("test.txt", mode="wb") as file:
-    file.write(dat)
+  #test##############使い回しできそう########################
+  # with open("test.txt", mode="wb") as file:
+  #   file.write(dat)
   return(dat_status, dat)
 
 
