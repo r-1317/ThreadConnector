@@ -1,9 +1,9 @@
 import argparse
 import os
 import requests
+import time
 
 output_dir = "output/"
-connected_dat = ""
 
 #関数の定義
 def default_filename():
@@ -51,6 +51,21 @@ def manual(i):
   url = str(input(f"Part{i}のurlを入力してください。"))
   return url
 
+def output(filename, data):
+  #ファイル作成・書き込み
+  with open(output_dir + filename, mode="w") as file:
+    file.write(data)
+  #保存のメッセージ
+  if filename[-1] == "t": #datか否か
+    print(f"datを'{filename}'として保存しました。")
+  else:
+    print(f"htmlを'{filename}'として保存しました。")
+
+def convert_data(dat):
+  #######未実装#######
+  return("未実装")
+
+
 
 def main():
   parser = argparse.ArgumentParser(description="電子掲示板の複数partに別れたスレッドを結合します。")
@@ -58,17 +73,22 @@ def main():
   parser.add_argument("latest_url", help = "最新のスレッドのURL")
   parser.add_argument("partnumber", type = int, help = "最新スレッドのpart数")
   parser.add_argument("-f", "--filename", default = default_filename(), help = "出力するファイル名")
+  parser.add_argument("-h", "--html", action="store_false")
   #引数の解析
   args = parser.parse_args()
-  #
+  #変数
   url = args.latest_url
   partnumber = args.partnumber
   filename = args.filename
+  html = args.html
+  connected_dat = ""
   #繰り返し開始
   for i in range(partnumber, 0, -1):
+    #前スレurl検索
+    url = find_url(dat)
     #htmlのurlをdatのurlに変換
     dat_url = convert_url(url)
-    #datを取得
+      #datを取得
     while True:
       dat_status, dat = get_dat(dat_url)
       if dat_status:
@@ -76,7 +96,19 @@ def main():
       else: #dat取得に失敗した場合
         url = manual(i)
         dat_url = convert_url(url)
-
+    #datを結合
+    connected_dat = dat + connected_dat
+    #1.5秒待機
+    time.sleep(1.5)
+    print(f"Part{i}まで完了")
+  #繰り返し終了
+  #dat出力
+  output(filename, connected_dat)
+  #html出力
+  if html:
+    html_filename = filename[:-3] + "html"  #htmlのファイル名
+    html_data = convert_data(connected_dat)
+    output(filename, html_data)
 
 if __name__ == "__main__":
   main()
