@@ -42,8 +42,8 @@ def get_dat(url):
     dat = dat.decode(encoding = "shift_jis", errors = "replace")#バイト列を文字列(Shift-JIS)に変換
   print(type(dat))# test
   #test##############使い回しできそう########################
-  with open("test.txt", mode="wb") as file:
-    file.write(dat)
+  # with open("test.txt", mode="wb") as file:
+  #   file.write(dat)
   return(dat_status, dat)
 
 
