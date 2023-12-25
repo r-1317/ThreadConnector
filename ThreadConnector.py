@@ -2,6 +2,7 @@ import argparse
 import os
 import requests
 import time
+import re
 
 output_dir = "output/"
 
@@ -17,6 +18,17 @@ def default_filename():
     else:
       return fn
       break
+
+def find_url(dat):
+  s = dat.find("前スレ")  #前スレの場所を探す
+  dat = dat[s:] #前スレ以前を削除
+  pattern = "https?://[\w/:%#\$&\?\(\)~\.=\+\-]+" #引用元: https://trelab.info/python/python-%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE%E3%81%A7url%E3%81%AE%E4%B8%80%E8%87%B4%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%80%81%E6%8A%BD%E5%87%BA%E3%82%92%E8%A1%8C%E3%81%86/
+  url_list = re.findall(pattern, dat)
+  try:
+    url = url_list[0]
+  except IndexError:  #URLがなかった場合
+    url = False
+  return(url)
 
 def convert_url(html_url):
   #末尾の"/"を削除
@@ -85,7 +97,10 @@ def main():
   #繰り返し開始
   for i in range(partnumber, 0, -1):
     #前スレurl検索
-    url = find_url(dat)
+    if i != partnumber: #初回はスキップ
+      url = find_url(dat)
+      if not url:  #URLがなかった場合は手動入力
+        url = manual(i)
     #htmlのurlをdatのurlに変換
     dat_url = convert_url(url)
       #datを取得
