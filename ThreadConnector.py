@@ -53,7 +53,7 @@ def get_dat(url):
     dat_status = True
     dat = dat_res.content
     dat = dat.decode(encoding = "shift_jis", errors = "replace")#バイト列を文字列(Shift-JIS)に変換
-  print(type(dat))# test
+  # print(type(dat))# test
   #test##############使い回しできそう########################
   # with open("test.txt", mode="wb") as file:
   #   file.write(dat)
@@ -85,7 +85,7 @@ def main():
   parser.add_argument("latest_url", help = "最新のスレッドのURL")
   parser.add_argument("partnumber", type = int, help = "最新スレッドのpart数")
   parser.add_argument("-f", "--filename", default = default_filename(), help = "出力するファイル名")
-  parser.add_argument("-h", "--html", action="store_false")
+  parser.add_argument("--html", action="store_false")
   #引数の解析
   args = parser.parse_args()
   #変数
