@@ -3,6 +3,7 @@ import os
 import requests
 
 output_dir = "output/"
+connected_dat = ""
 
 #関数の定義
 def default_filename():
@@ -46,6 +47,9 @@ def get_dat(url):
   #   file.write(dat)
   return(dat_status, dat)
 
+def manual(i):
+  url = str(input(f"Part{i}のurlを入力してください。"))
+  return url
 
 
 def main():
@@ -65,7 +69,13 @@ def main():
     #htmlのurlをdatのurlに変換
     dat_url = convert_url(url)
     #datを取得
-    dat = get_dat(dat_url)
+    while True:
+      dat_status, dat = get_dat(dat_url)
+      if dat_status:
+        break
+      else: #dat取得に失敗した場合
+        url = manual(i)
+        dat_url = convert_url(url)
 
 
 if __name__ == "__main__":
