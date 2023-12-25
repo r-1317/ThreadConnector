@@ -21,20 +21,25 @@ def convert_url(html_url):
   #末尾の"/"を削除
   if html_url[-1] == "/":
     html_url = html_url[:-1]
+  #"test/read.cgi/"を削除
   s = html_url.find("test/read.cgi/")
   html_url = html_url[:s] + html_url[s+14:]
+  #途中の"dat/"と拡張子を追加
   last_slush = html_url.rfind("/")
   html_url = html_url[:last_slush] + "/dat" + html_url[last_slush:] + ".dat"
   return(html_url)
 
 def get_dat(url):
   headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5666.197 Safari/537.36"}
-  dat = b""
+  #戻り値の初期設定
+  dat = ""
   dat_status = False
+  #dat取得
   dat_res = requests.get(url, headers = headers)
   if dat_res.status_code == 200:
     dat_status = True
     dat = dat_res.content
+    dat = dat.decode(encoding = "shift_jis")#バイト列を文字列(Shift-JIS)に変換
   print(type(dat))# test
   #test##############使い回しできそう########################
   # with open("test.txt", mode="wb") as file:
