@@ -1,4 +1,5 @@
 12/24: 5h
+12/25: 40m
 
 python ThreadConnector.py https://hayabusa.open2ch.net/test/read.cgi/livejupiter/1703337908/ 406
 

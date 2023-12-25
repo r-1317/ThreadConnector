@@ -39,11 +39,11 @@ def get_dat(url):
   if dat_res.status_code == 200:
     dat_status = True
     dat = dat_res.content
-    dat = dat.decode(encoding = "shift_jis")#バイト列を文字列(Shift-JIS)に変換
+    # dat = dat.decode(encoding = "shift_jis")#バイト列を文字列(Shift-JIS)に変換
   print(type(dat))# test
   #test##############使い回しできそう########################
-  # with open("test.txt", mode="wb") as file:
-  #   file.write(dat)
+  with open("test.txt", mode="wb") as file:
+    file.write(dat)
   return(dat_status, dat)
 
 
