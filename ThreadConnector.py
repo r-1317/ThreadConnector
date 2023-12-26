@@ -95,7 +95,7 @@ def main():
   parser.add_argument("latest_url", help = "最新のスレッドのURL")
   parser.add_argument("partnumber", type = int, help = "最新スレッドのpart数")
   parser.add_argument("-f", "--filename", default = default_filename(), help = "出力するファイル名")
-  parser.add_argument("--html", action="store_false", help = "datをhtmlに変換して保存 datも保存される")
+  parser.add_argument("--html", action="store_true", help = "datをhtmlに変換して保存 datも保存される")
   parser.add_argument("-t", "--time", type = float, default = 1, help = "待機時間(秒)  デフォルト1")
   #引数の解析
   args = parser.parse_args()

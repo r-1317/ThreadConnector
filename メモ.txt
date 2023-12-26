@@ -13,4 +13,4 @@ https://trelab.info/python/python-%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE%E3%81%A7u
 
 datが見つからないない場合もある。その時はどうしようもない
 
-ToDo: 待機時間を変更できるようにする
+ToDo: datをhtmlに変換できるようにする
