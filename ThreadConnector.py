@@ -85,7 +85,8 @@ def output(filename, data):
     print(f"htmlを'{filename}'として保存しました。")
 
 def convert_data(dat):
-  #######未実装#######
+  dat_elements = dat.split("<>")
+
   return("未実装")
 
 
@@ -95,7 +96,7 @@ def main():
   parser.add_argument("latest_url", help = "最新のスレッドのURL")
   parser.add_argument("partnumber", type = int, help = "最新スレッドのpart数")
   parser.add_argument("-f", "--filename", default = default_filename(), help = "出力するファイル名")
-  parser.add_argument("--html", action="store_true", help = "datをhtmlに変換して保存 datも保存される")
+  # parser.add_argument("--html", action="store_true", help = "datをhtmlに変換して保存 datも保存される")  #廃止
   parser.add_argument("-t", "--time", type = float, default = 1, help = "待機時間(秒)  デフォルト1")
   #引数の解析
   args = parser.parse_args()
@@ -103,7 +104,7 @@ def main():
   url = args.latest_url
   partnumber = args.partnumber
   filename = args.filename
-  html = args.html
+  # html = args.html  #廃止
   wait_time = args.time
   connected_dat = ""
   if wait_time < 0.5: #待機時間が短い場合は0.5秒にする。 
@@ -135,10 +136,9 @@ def main():
   #dat出力
   output(filename, connected_dat)
   #html出力
-  if html:
-    html_filename = filename[:-3] + "html"  #htmlのファイル名
-    html_data = convert_data(connected_dat)
-    output(html_filename, html_data)
+  html_filename = filename[:-3] + "html"  #htmlのファイル名
+  html_data = convert_data(connected_dat)
+  output(html_filename, html_data)
 
 if __name__ == "__main__":
   main()
