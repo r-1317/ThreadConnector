@@ -11,7 +11,7 @@ def default_filename():
   assert os.path.isdir(output_dir)
   n = 0
   while True:
-    fn = f"結合済みdat({n}).dat"
+    fn = f"結合済み({n}).dat"
     # print(output_dir + fn) #デバッグ
     if os.path.isfile(output_dir + fn):
       n += 1
