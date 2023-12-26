@@ -4,15 +4,15 @@ import requests
 import time
 import re
 
-output_dir = "" #プログラムと同一ディレクトリに変更した
+output_dir = "" #プログラムと同一ディレクトリに仕様変更
 
 #関数の定義
 def default_filename():
   n = 0
   while True:
-    fn = f"結合済み({n}).dat"
+    fn = f"結合済み({n})"
     # print(output_dir + fn) #デバッグ
-    if os.path.isfile(output_dir + fn):
+    if os.path.isfile(output_dir + fn + ".dat"):
       n += 1
     else:
       return fn
@@ -163,9 +163,9 @@ def main():
     print(f"Part{i}まで完了")
   #繰り返し終了
   #dat出力
-  output(filename, connected_dat)
+  output(filename + ".dat", connected_dat)
   #html出力
-  html_filename = filename[:-3] + "html"  #htmlのファイル名
+  html_filename = filename + ".html"  #htmlのファイル名
   html_data = convert_data(connected_dat)
   output(html_filename, html_data)
 
