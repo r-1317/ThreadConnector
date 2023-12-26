@@ -83,7 +83,7 @@ def output(filename, data):
   else:
     print(f"htmlを'{filename}'として保存しました。")
 
-def convert_data(dat):
+def convert_data(dat):  # https://anis774.net/codevault/dattohtml.html を参考に作成
   #"<>"毎に分割
   dat_elements = dat.split("<>")
   #初期化
