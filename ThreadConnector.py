@@ -34,11 +34,22 @@ def convert_url(html_url):
   #末尾の"/"を削除
   if html_url[-1] == "/":
     html_url = html_url[:-1]
+  #?以降を削除
+  s = html_url.find("?")
+  if s != -1:
+    html_url = html_url[:s]
+  #最新50 等のオプションを削除
+  last_slush = html_url.rfind("/")  #最後の"/"を検索
+  if "l" in html_url[last_slush:]:  #最後の"/"の後に"l"が存在するか
+    html_url = html_url[:last_slush]  #最後の"/"以降を"/"含め削除
+  #前100, 次100 等のオプションを削除
+  if "-" in html_url[last_slush:]:  #最後の"/"の後に"-"が存在するか
+    html_url = html_url[:last_slush]  #最後の"/"以降を"/"含め削除
   #"test/read.cgi/"を削除
   s = html_url.find("test/read.cgi/")
   html_url = html_url[:s] + html_url[s+14:]
   #途中の"dat/"と拡張子を追加
-  last_slush = html_url.rfind("/")
+  last_slush = html_url.rfind("/")  #最後の"/"を検索
   html_url = html_url[:last_slush] + "/dat" + html_url[last_slush:] + ".dat"
   return(html_url)
 
@@ -52,7 +63,7 @@ def get_dat(url):
   if dat_res.status_code == 200:
     dat_status = True
     dat = dat_res.content
-    dat = dat.decode(encoding = "shift_jis", errors = "replace")#バイト列を文字列(Shift-JIS)に変換
+    dat = dat.decode(encoding = "shift_jis", errors = "replace")  #バイト列を文字列(Shift-JIS)に変換
   # print(type(dat))# test
   #test##############使い回しできそう########################
   # with open("test.txt", mode="wb") as file:
