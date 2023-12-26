@@ -89,14 +89,14 @@ def convert_data(dat):
   return("未実装")
 
 
-
 def main():
   parser = argparse.ArgumentParser(description="電子掲示板の複数partに別れたスレッドを結合します。")
   # 引数の設定
   parser.add_argument("latest_url", help = "最新のスレッドのURL")
   parser.add_argument("partnumber", type = int, help = "最新スレッドのpart数")
   parser.add_argument("-f", "--filename", default = default_filename(), help = "出力するファイル名")
-  parser.add_argument("--html", action="store_false")
+  parser.add_argument("--html", action="store_false", help = "datをhtmlに変換して保存 datも保存される")
+  parser.add_argument("-t", "time", type = float, default = 1 help = "待機時間(秒)  デフォルト1")
   #引数の解析
   args = parser.parse_args()
   #変数
@@ -104,7 +104,11 @@ def main():
   partnumber = args.partnumber
   filename = args.filename
   html = args.html
+  wait_time = args.time
   connected_dat = ""
+  if wait_time < 0.5: #待機時間が短い場合は0.5秒にする。 
+    wait_time = 0.5
+    print("待機時間が短すぎます 0.5秒に変更しました。")
   #繰り返し開始
   for i in range(partnumber, 0, -1):
     #前スレurl検索
@@ -124,8 +128,8 @@ def main():
         dat_url = convert_url(url)
     #datを結合
     connected_dat = dat + connected_dat
-    #1.5秒待機
-    time.sleep(1.5)
+    #待機
+    time.sleep(wait_time)
     print(f"Part{i}まで完了")
   #繰り返し終了
   #dat出力
