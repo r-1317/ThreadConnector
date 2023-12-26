@@ -4,11 +4,10 @@ import requests
 import time
 import re
 
-output_dir = "output/"
+output_dir = "" #プログラムと同一ディレクトリに変更した
 
 #関数の定義
 def default_filename():
-  assert os.path.isdir(output_dir)
   n = 0
   while True:
     fn = f"結合済み({n}).dat"
@@ -85,9 +84,39 @@ def output(filename, data):
     print(f"htmlを'{filename}'として保存しました。")
 
 def convert_data(dat):
+  #"<>"毎に分割
   dat_elements = dat.split("<>")
-
-  return("未実装")
+  #初期化
+  html_data = '''
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="Shift_JIS">
+  </head>
+  <body text="#000000" link="#0000FF" alink="#FF0000" vlink="#660099" bgcolor="#EFEFEF">
+  '''
+  res = 1 #レス番
+  n = int(len(dat_elements)/4)  #繰り返し回数
+  #1レス目
+  name = f'<font color="#228811"><b>{dat_elements[0]}</b></font>' #名前
+  #(メール欄は無視)
+  time_and_id = dat_elements[2] #日時とID
+  body = dat_elements[3]  #本文
+  #html_dataに書き加える
+  html_data = f"{html_data}{res}：{name}：{time_and_id}<br>\n{body}<br><br>\n"
+  #2レス目以降
+  for i in range(n):
+    #変数
+    name = f'<font color="#228811"><b>{dat_elements[i*4]}</b></font>' #名前
+    #(メール欄は無視)
+    time_and_id = dat_elements[i*4+2] #日時とID
+    body = dat_elements[i*4+3]  #本文
+    #html_dataに書き加える
+    html_data = f"{html_data}{res}：{name}：{time_and_id}<br>\n{body}<br><br>\n"
+    res += 1
+  html_data = html_data + "</body>\n</html>"
+  # return(len(dat_elements))  #test
+  return(html_data)
 
 
 def main():
