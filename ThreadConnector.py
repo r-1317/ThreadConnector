@@ -138,7 +138,7 @@ def main():
   if html:
     html_filename = filename[:-3] + "html"  #htmlのファイル名
     html_data = convert_data(connected_dat)
-    output(filename, html_data)
+    output(html_filename, html_data)
 
 if __name__ == "__main__":
   main()
