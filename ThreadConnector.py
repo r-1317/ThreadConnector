@@ -63,7 +63,7 @@ def get_dat(url):
   if dat_res.status_code == 200:
     dat_status = True
     dat = dat_res.content
-    dat = dat.decode(encoding = "shift_jis", errors = "replace")  #バイト列を文字列(Shift-JIS)に変換
+    dat = dat.decode(encoding = "shift_jis", errors = "ignore")  #バイト列を文字列(Shift-JIS)に変換
   # print(type(dat))# test
   #test##############使い回しできそう########################
   # with open("test.txt", mode="wb") as file:
@@ -76,10 +76,10 @@ def manual(i):
 
 def output(filename, data):
   #ファイル作成・書き込み
-  with open(output_dir + filename, mode="w") as file:
+  with open(output_dir + filename, mode="w", encoding="shift_jis") as file:
     file.write(data)
   #保存のメッセージ
-  if filename[-1] == "t": #datか否か
+  if filename[-1] == "t": #拡張子がdatか否か
     print(f"datを'{filename}'として保存しました。")
   else:
     print(f"htmlを'{filename}'として保存しました。")
