@@ -164,6 +164,8 @@ def main():
   #繰り返し終了
   #dat出力
   output(filename + ".dat", connected_dat)
+  if partnumber > 5:
+    print("時間がかかる場合があります しばらくお待ちください。")
   #html出力
   html_filename = filename + ".html"  #htmlのファイル名
   html_data = convert_data(connected_dat)
