@@ -1,12 +1,15 @@
 12/24: 5h
 12/25: 3h40m
 12/26 8h30m
+12/27 3h
 
 python ThreadConnector.py https://hayabusa.open2ch.net/test/read.cgi/livejupiter/1703337908/ 406
 
 python ThreadConnector.py https://mao.5ch.net/test/read.cgi/linux/1680691475 38 
 
 python ThreadConnector.py https://uni.open2ch.net/test/read.cgi/newsplus/1699139504/l50 33 -f ウクライナ情勢 -t 1
+
+ThreadConnector-1.1.exe https://uni.open2ch.net/test/read.cgi/newsplus/1646728753/ 6 -f ウクライナ情勢 -t 0.8
 
 不具合が起こるスレ
 https://mao.5ch.net/test/read.cgi/linux/1566402890/
