@@ -1,7 +1,7 @@
 12/24: 5h
 12/25: 3h40m
 12/26 8h30m
-12/27 3h
+12/27 5h
 
 python ThreadConnector.py https://hayabusa.open2ch.net/test/read.cgi/livejupiter/1703337908/ 406
 
