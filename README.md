@@ -59,7 +59,7 @@ datを取得するときの待機時間です。<br>
 <h3 id="正しく動作しないスレッド">正しく動作しないスレッド</h3>
 <p><img src="https://github.com/r-1317/ThreadConnector/blob/main/images/img05.png?raw=true" alt="正しく動作しないスレッド"><br>
 このように、前スレの候補が複数あり、それらが昇順で並んでいる場合は正しく動作しません。<br>
-このスレッドでは、Part28をPart30として取得してしまいます。</p>
+この例では、Part28をPart30として取得してしまいます。</p>
 </div>
 </body>
 
