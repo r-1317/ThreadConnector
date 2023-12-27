@@ -18,7 +18,7 @@
 <a href="https://github.com/r-1317/ThreadConnector/blob/main/sample/sample.html">https://github.com/r-1317/ThreadConnector/blob/main/sample/sample.html</a><br>
 Githup Pagesを使うと文字化けしたため、一度ダウンロードしてからローカル環境で開いてください。</p>
 <h2 id="ダウンロード">ダウンロード</h2>
-<p>以下のURLよりダウンロードできます。</p>
+<p>以下よりダウンロードできます。</p>
 <ul>
 <li>
 <p><a href="https://github.com/r-1317/ThreadConnector/releases/download/Version1.1/ThreadConnector-1.1.exe">Windows用実行ファイル</a></p>
