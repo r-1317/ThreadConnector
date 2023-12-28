@@ -61,6 +61,20 @@ datを取得するときの待機時間です。<br>
 <a href="https://mao.5ch.net/test/read.cgi/linux/1566402890/">https://mao.5ch.net/test/read.cgi/linux/1566402890/</a><br>
 このように、前スレの候補が複数あり、それらが昇順で並んでいる場合は正しく動作しません。<br>
 この例では、Part28をPart30として取得してしまいます。</p>
+<h2 id="使用しているモジュール">使用しているモジュール</h2>
+<p>このソフトウェアは、Pythonを使用しています。</p>
+<ul>
+<li>Python (<a href="https://docs.python.org/ja/3/license.html#psf-license">Python Software Foundation License</a>) Copyright © 2001-2023 Python Software Foundation. All rights reserved.</li>
+</ul>
+<p>また、以下のモジュールも使用しています。</p>
+<ul>
+<li>
+<p>requests (<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>) Copyright 2019 Kenneth Reitz</p>
+</li>
+<li>
+<p>Python標準ライブラリ (os, time, re, argparse) (<a href="https://docs.python.org/ja/3/license.html#psf-license">Python Software Foundation License</a>) Copyright © 2001-2023 Python Software Foundation. All rights reserved.</p>
+</li>
+</ul>
 <h2 id="ライセンス">ライセンス</h2>
 <p>このソフトウェアは、MITライセンスを適用しています。<a href="https://github.com/r-1317/ThreadConnector/blob/main/LICSNSE.txt">LICENSE.txt</a>をご確認ください。</p>
 </div>
