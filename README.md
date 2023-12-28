@@ -60,6 +60,8 @@ datを取得するときの待機時間です。<br>
 <p><img src="https://github.com/r-1317/ThreadConnector/blob/main/images/img05.png?raw=true" alt="正しく動作しないスレッド"><br>
 このように、前スレの候補が複数あり、それらが昇順で並んでいる場合は正しく動作しません。<br>
 この例では、Part28をPart30として取得してしまいます。</p>
+<h2 id="ライセンス">ライセンス</h2>
+<p>このソフトウェアは、MITライセンスのもとで公開されています。<a href="https://github.com/r-1317/ThreadConnector/blob/main/LICSNSE.txt">LICENSE.txt</a>をご確認ください。</p>
 </div>
 </body>
 
