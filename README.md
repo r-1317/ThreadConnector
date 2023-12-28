@@ -61,7 +61,7 @@ datを取得するときの待機時間です。<br>
 <a href="https://mao.5ch.net/test/read.cgi/linux/1566402890/">https://mao.5ch.net/test/read.cgi/linux/1566402890/</a><br>
 このように、前スレの候補が複数あり、それらが昇順で並んでいる場合は正しく動作しません。<br>
 この例では、Part28をPart30として取得してしまいます。</p>
-<h2 id="使用しているモジュール">使用しているモジュール</h2>
+<h2 id="使用しているモジュールなど">使用しているモジュールなど</h2>
 <p>このソフトウェアは、Pythonを使用しています。</p>
 <ul>
 <li>Python (<a href="https://docs.python.org/ja/3/license.html#psf-license">Python Software Foundation License</a>) Copyright © 2001-2023 Python Software Foundation. All rights reserved.</li>
