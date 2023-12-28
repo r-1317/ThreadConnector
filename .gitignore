@@ -1,7 +1,7 @@
-__pycache__/
+#__pycache__/
 
-.venv/
+#.venv/
 
-産業廃棄物/
+#産業廃棄物/
 
-test.ipynb
+#test.ipynb
