@@ -76,7 +76,7 @@ datを取得するときの待機時間です。<br>
 </li>
 </ul>
 <h2 id="ライセンス">ライセンス</h2>
-<p>このソフトウェアは、MITライセンスを適用しています。<a href="https://github.com/r-1317/ThreadConnector/blob/main/LICSNSE.txt">LICENSE.txt</a>をご確認ください。</p>
+<p>このソフトウェアは、MITライセンスを適用しています。<a href="https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt">LICENSE.txt</a>をご確認ください。</p>
 </div>
 </body>
 
