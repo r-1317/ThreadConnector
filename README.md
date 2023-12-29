@@ -28,8 +28,7 @@ Githup Pagesを使うと文字化けしたため、一度ダウンロードし�
  
 
  - `-t`, `--time`
- datを取得するときの待機時間です。
- 指定しない場合は1秒になり、0.5秒未満を指定すると0.5秒になります。
+ datを取得するときの待機時間です。 指定しない場合は1秒になり、0.5秒未満を指定すると0.5秒になります。
 
 ### 問題が発生した場合
 ![問題](https://github.com/r-1317/ThreadConnector/blob/main/images/img02.png?raw=true)
@@ -55,5 +54,6 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前ス�
 ## ライセンス
 このソフトウェアは、[MIT License](https://opensource.org/license/mit/)の下で配布されています。詳細は[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)を参照してください。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NDUwNzk3NSwtMTE5Mzc3OTI3N119
+eyJoaXN0b3J5IjpbLTE0MDQzODU2ODksLTExOTM3NzkyNzddfQ
+==
 -->
