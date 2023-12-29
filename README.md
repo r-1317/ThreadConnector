@@ -72,7 +72,7 @@ datを取得するときの待機時間です。<br>
 <p>requests (<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>) Copyright 2019 Kenneth Reitz</p>
 </li>
 <li>
-<p>Python標準ライブラリ (os, time, re, argparse) (<a href="https://docs.python.org/ja/3/license.html#psf-license">Python Software Foundation License</a>) Copyright © 2001-2023 Python Software Foundation. All rights reserved.</p>
+<p>os, time, re, argparse (<a href="https://docs.python.org/ja/3/license.html#psf-license">Python Software Foundation License</a>) Copyright © 2001-2023 Python Software Foundation. All rights reserved.</p>
 </li>
 </ul>
 <h2 id="ライセンス">ライセンス</h2>
