@@ -47,13 +47,13 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前ス�
 
 また、以下のモジュールも使用しています。
 
- - requests ([Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)) Copyright 2019 Kenneth Reitz
+ - **Requests** ([Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)) Copyright 2019 Kenneth Reitz
  
-- os, time, re, argparse ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2023 Python Software Foundation. All rights reserved.
+- **os**, **time**, **re**, **argparse** ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2023 Python Software Foundation. All rights reserved.
 
 ## ライセンス
 このソフトウェアは、[MIT License](https://opensource.org/license/mit/)の下で配布されています。詳細は[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)を参照してください。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDQzODU2ODksLTExOTM3NzkyNzddfQ
-==
+eyJoaXN0b3J5IjpbNjQ3MjQ0NDIzLC0xNDA0Mzg1Njg5LC0xMT
+kzNzc5Mjc3XX0=
 -->
