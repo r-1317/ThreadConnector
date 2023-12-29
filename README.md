@@ -33,8 +33,7 @@ Githup Pagesを使うと文字化けしたため、一度ダウンロードし�
 
 ### 問題が発生した場合
 ![問題](https://github.com/r-1317/ThreadConnector/blob/main/images/img02.png?raw=true)
-画像にように、
-`Part〇〇のurlを入力してください。`
+画像にように、`Part〇〇のurlを入力してください。`
 と表示されることがあります。
 その時は、検索エンジン等で当該スレッドを探し、URLを入力してください。
 
@@ -61,5 +60,5 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/
 ## ライセンス
 このソフトウェアは、MITライセンスを適用しています。[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)をご確認ください。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM3NzkyNzddfQ==
+eyJoaXN0b3J5IjpbLTM2NDU5NTU1MSwtMTE5Mzc3OTI3N119
 -->
