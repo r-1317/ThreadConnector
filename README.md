@@ -53,8 +53,7 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前ス�
 - os, time, re, argparse ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2023 Python Software Foundation. All rights reserved.
 
 ## ライセンス
-このソフトウェアは、[MIT License](https://opensource.org/license/mit/)を適用しています。[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)をご確認ください。
+このソフトウェアは、[MIT License](https://opensource.org/license/mit/)の下で配布されています。詳細は[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)を参照してください。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzEwNzQ4NTksLTExOTM3NzkyNzddfQ
-==
+eyJoaXN0b3J5IjpbLTY0NDUwNzk3NSwtMTE5Mzc3OTI3N119
 -->
