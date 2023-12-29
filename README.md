@@ -33,19 +33,14 @@ Githup Pagesを使うと文字化けしたため、一度ダウンロードし�
 
 ### 問題が発生した場合
 ![問題](https://github.com/r-1317/ThreadConnector/blob/main/images/img02.png?raw=true)
-画像にように、`Part〇〇のurlを入力してください。`
-と表示されることがあります。
-その時は、検索エンジン等で当該スレッドを探し、URLを入力してください。
+画像にように、`Part〇〇のurlを入力してください。`と表示されることがあります。<br>その時は、検索エンジン等で当該スレッドを探し、URLを入力してください。
 
 ![無限にURLの入力を求められる](https://github.com/r-1317/ThreadConnector/blob/main/images/img08.png?raw=true)
-稀に、正しいURLを入力しても、無限にURLの入力を求められる場合があります。
-その時はプログラムを強制終了してください。
+稀に、正しいURLを入力しても、無限にURLの入力を求められる場合があります。<br>その時はプログラムを強制終了してください。
 
 ### 正しく動作しないスレッド
 ![正しく動作しないスレッド](https://github.com/r-1317/ThreadConnector/blob/main/images/img05.png?raw=true)
-https://mao.5ch.net/test/read.cgi/linux/1566402890/
-このように、前スレの候補が複数あり、それらが昇順で並んでいる場合は正しく動作しません。
-この例では、Part28をPart30として取得してしまいます。
+https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前スレの候補が複数あり、それらが昇順で並んでいる場合は正しく動作しません。<br>この例では、Part28をPart30として取得してしまいます。
 
 ## 使用しているモジュールなど
 このソフトウェアは、Pythonを使用しています。
@@ -60,5 +55,6 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/
 ## ライセンス
 このソフトウェアは、MITライセンスを適用しています。[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)をご確認ください。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDU5NTU1MSwtMTE5Mzc3OTI3N119
+eyJoaXN0b3J5IjpbLTE3NDEzMjg5NDUsLTExOTM3NzkyNzddfQ
+==
 -->
