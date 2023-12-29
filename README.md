@@ -43,7 +43,7 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前ス�
 
 ## 使用しているモジュールなど
 このソフトウェアは、Pythonを使用しています。
-- Python ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2023 Python Software Foundation. All rights reserved.
+- **Python** ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2023 Python Software Foundation. All rights reserved.
 
 また、以下のモジュールも使用しています。
 
@@ -54,6 +54,6 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前ス�
 ## ライセンス
 このソフトウェアは、[MIT License](https://opensource.org/license/mit/)の下で配布されています。詳細は[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)を参照してください。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ3MjQ0NDIzLC0xNDA0Mzg1Njg5LC0xMT
+eyJoaXN0b3J5IjpbNzQ1OTc4NTAzLC0xNDA0Mzg1Njg5LC0xMT
 kzNzc5Mjc3XX0=
 -->
