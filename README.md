@@ -40,7 +40,7 @@ https://github.com/r-1317/ThreadConnector/blob/main/sample/sample.html<br>Githup
 ![正しく動作しないスレッド](https://github.com/r-1317/ThreadConnector/blob/main/images/img05.png?raw=true)
 https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前スレの候補が複数あり、それらが昇順で並んでいる場合は正しく動作しません。<br>この例では、Part28をPart30として取得してしまいます。
 
-## 使用しているモジュールなど
+## 使用している言語とモジュールなど
 このソフトウェアは、Pythonを使用しています。
 - **Python** ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2023 Python Software Foundation. All rights reserved.
 
@@ -53,6 +53,6 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前ス�
 ## ライセンス
 このソフトウェアは、[MIT License](https://opensource.org/license/mit/)の下で配布されています。詳細は[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)を参照してください。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjA5MjA0MDksNzQ1OTc4NTAzLC0xND
-A0Mzg1Njg5LC0xMTkzNzc5Mjc3XX0=
+eyJoaXN0b3J5IjpbNTM0NDEzNjU3LC0xMTYwOTIwNDA5LDc0NT
+k3ODUwMywtMTQwNDM4NTY4OSwtMTE5Mzc3OTI3N119
 -->
