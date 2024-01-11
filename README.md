@@ -5,8 +5,7 @@
 電子掲示板の複数partに別れたスレッドを結合し、datとhtmlで保存します。
 ### 出力の例
 ![使用例](https://github.com/r-1317/ThreadConnector/blob/main/images/img06.png?raw=true)
-https://github.com/r-1317/ThreadConnector/blob/main/sample/sample.html
-Githup Pagesを使うと文字化けしたため、一度ダウンロードしてからローカル環境で開いてください。
+https://github.com/r-1317/ThreadConnector/blob/main/sample/sample.html<br>Githup Pagesを使うと文字化けしたため、一度ダウンロードしてからローカル環境で開いてください。
 
 ## ダウンロード
 以下のリンクよりダウンロードできます。
@@ -54,6 +53,6 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前ス�
 ## ライセンス
 このソフトウェアは、[MIT License](https://opensource.org/license/mit/)の下で配布されています。詳細は[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)を参照してください。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ1OTc4NTAzLC0xNDA0Mzg1Njg5LC0xMT
-kzNzc5Mjc3XX0=
+eyJoaXN0b3J5IjpbLTExNjA5MjA0MDksNzQ1OTc4NTAzLC0xND
+A0Mzg1Njg5LC0xMTkzNzc5Mjc3XX0=
 -->
