@@ -42,17 +42,18 @@ https://mao.5ch.net/test/read.cgi/linux/1566402890/<br>このように、前ス�
 
 ## 使用している言語とモジュール
 このソフトウェアは、Pythonを使用しています。
-- **Python** ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2023 Python Software Foundation. All rights reserved.
+- **Python** ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2024 Python Software Foundation. All rights reserved.
 
 また、以下のモジュールも使用しています。
 
  - **Requests** ([Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)) Copyright 2019 Kenneth Reitz
  
-- **os**, **time**, **re**, **argparse** ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2023 Python Software Foundation. All rights reserved.
+- **os**, **time**, **re**, **argparse** ([Python Software Foundation License](https://docs.python.org/ja/3/license.html#psf-license)) Copyright © 2001-2024 Python Software Foundation. All rights reserved.
 
 ## ライセンス
 このソフトウェアは、[MIT License](https://opensource.org/license/mit/)の下で配布されています。詳細は[LICENSE.txt](https://github.com/r-1317/ThreadConnector/blob/main/LICENSE.txt)を参照してください。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1ODg1MzAzMCwtMTE2MDkyMDQwOSw3ND
-U5Nzg1MDMsLTE0MDQzODU2ODksLTExOTM3NzkyNzddfQ==
+eyJoaXN0b3J5IjpbMTg4NTMxNjcyLC0zNTg4NTMwMzAsLTExNj
+A5MjA0MDksNzQ1OTc4NTAzLC0xNDA0Mzg1Njg5LC0xMTkzNzc5
+Mjc3XX0=
 -->
